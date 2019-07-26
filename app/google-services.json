@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "196983444532",
+    "firebase_url": "https://autoscad-2bb87.firebaseio.com",
+    "project_id": "autoscad-2bb87",
+    "storage_bucket": "autoscad-2bb87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196983444532:android:573253fb288262a6",
+        "android_client_info": {
+          "package_name": "com.nusantarian.autoscad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196983444532-hbldd8rtfor5cb97vvdfvbr5h6rt82ca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nusantarian.autoscad",
+            "certificate_hash": "f799ad563fc3f9b7ccb6255e92e005185fc48aec"
+          }
+        },
+        {
+          "client_id": "196983444532-1dp2nk332dhu5ufndhd7r1gqkbu5iccs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkil8cKcA4dI1pt-diGWLQEOXj-z7forY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196983444532-1dp2nk332dhu5ufndhd7r1gqkbu5iccs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
