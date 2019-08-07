@@ -30,6 +30,7 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
         FirebaseUser mUser = mAuth.getCurrentUser();
         if (mUser != null){
             startActivity(new Intent(LandingActivity.this, MainActivity.class));
+            finish();
         }
     }
 
@@ -38,9 +39,11 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
         switch (view.getId()){
             case R.id.btn_login:
                 startActivity(new Intent(LandingActivity.this, LoginActivity.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case R.id.btn_register:
                 startActivity(new Intent(LandingActivity.this, RegisterActivity.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
         }
     }
