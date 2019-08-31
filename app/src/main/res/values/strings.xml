@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">AutoScad</string>
+    <string name="logo">Logo</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="pengaturan">Pengaturan</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="alamat_email">Alamat Email</string>
+    <string name="password">Password</string>
+    <string name="lupa_password">Lupa Password?</string>
+    <string name="silahkan_masukkan_email_anda">Silahkan Masukkan Email Anda</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="nama">Nama</string>
+    <string name="ulangi_password">Ulangi Password</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="profil">Profil</string>
+    <string name="riwayat_deteksi">Riwayat Deteksi</string>
+    <string name="keluar">Keluar</string>
+    <string name="mulai_scan">Mulai Scan</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="pengaturan_profil">Pengaturan Profil</string>
 </resources>
