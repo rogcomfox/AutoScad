@@ -34,4 +34,6 @@
     <string name="pengaturan_profil">Pengaturan Profil</string>
     <string name="credit">AutoScad Team, 2019 @ All Rights Reserved</string>
     <string name="kembali">Kembali</string>
+    <string name="ubah_password">Ubah Password</string>
+    <string name="ubah_data">Ubah Data</string>
 </resources>
