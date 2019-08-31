@@ -32,4 +32,6 @@
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
     <string name="bantuan">Bantuan</string>
     <string name="pengaturan_profil">Pengaturan Profil</string>
+    <string name="credit">AutoScad Team, 2019 @ All Rights Reserved</string>
+    <string name="kembali">Kembali</string>
 </resources>
