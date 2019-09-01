@@ -36,4 +36,6 @@
     <string name="kembali">Kembali</string>
     <string name="ubah_password">Ubah Password</string>
     <string name="ubah_data">Ubah Data</string>
+    <string name="silahkan_masukkan_password_baru_anda">Silahkan Masukkan Password Baru Anda</string>
+    <string name="password_baru">Password Baru</string>
 </resources>
