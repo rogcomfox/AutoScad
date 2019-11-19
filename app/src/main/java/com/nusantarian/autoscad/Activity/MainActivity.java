@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -29,7 +30,7 @@ import android.view.Menu;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     private FirebaseAuth mAuth;
 
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        findViewById(R.id.btn_mulai).setOnClickListener(this);
     }
 
     @Override
@@ -72,10 +74,13 @@ public class MainActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.nav_about:
+                startActivity(new Intent(MainActivity.this, AboutActivity.class));
                 break;
             case R.id.nav_settings:
+                Toast.makeText(this, "Coming Soon!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_help:
+                Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
                 break;
         }
 
@@ -113,5 +118,13 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.btn_mulai){
+            startActivity(new Intent(MainActivity.this, ScanActivity.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        }
     }
 }

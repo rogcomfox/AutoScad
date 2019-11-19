@@ -1,9 +1,12 @@
 package com.nusantarian.autoscad.Activity;
 
+import android.content.Intent;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -50,12 +53,20 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.nav_changepass){
+            startActivity(new Intent(EditProfileActivity.this, ChangePassActivity.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        }
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.btn_change){
+            nama = et_nama.getText().toString();
+            email = et_email.getText().toString();
+            phone = et_phone.getText().toString();
+
 
         }
     }

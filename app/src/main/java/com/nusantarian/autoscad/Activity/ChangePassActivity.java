@@ -18,7 +18,6 @@ import java.util.Objects;
 
 public class ChangePassActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private FirebaseAuth mAuth;
     private EditText et_password, et_confpass;
     private FirebaseUser mUser;
 
@@ -32,7 +31,7 @@ public class ChangePassActivity extends AppCompatActivity implements View.OnClic
         Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.ubah_password);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        mAuth = FirebaseAuth.getInstance();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
         et_password = findViewById(R.id.et_password);
         et_confpass = findViewById(R.id.et_confpass);
