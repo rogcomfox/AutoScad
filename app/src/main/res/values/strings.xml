@@ -38,4 +38,7 @@
     <string name="ubah_data">Ubah Data</string>
     <string name="silahkan_masukkan_password_baru_anda">Silahkan Masukkan Password Baru Anda</string>
     <string name="password_baru">Password Baru</string>
+    <string name="hasil_scan">Hasil Scan</string>
+    <string name="ambil_gambar">Ambil Gambar</string>
+    <string name="proses_gambar">Proses Gambar</string>
 </resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ResultActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarColoredBackArrow">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_mosaic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:text="MOSAIC"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mosaic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Cara Menanggulangi"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cara"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:text="1. Pemilihan Lahan"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="2. Sanitasi"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list1"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="3. Disinfeksi Tangan Pekerja"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/list3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list2"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="4. Varietas Tahan Penyakit TMV"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/list4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list3"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="5. Rotasi Dengan tanaman Bukan Inang"
+                android:textColor="@color/colorPrimaryDark" />
+            <ImageView
+                android:id="@+id/btn_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/ic_print_black_24dp"
+                android:layout_below="@id/list4"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_share_black_24dp"
+                android:layout_below="@id/list4"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:id="@+id/btn_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_info_black_24dp"
+                android:layout_below="@id/list4"
+                android:layout_marginTop="30dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
