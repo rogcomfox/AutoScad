@@ -17,21 +17,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.ResultActivity"></activity>
-        <activity android:name=".Activity.ScanActivity" />
-        <activity android:name=".Activity.ChangePassActivity" />
-        <activity android:name=".Activity.EditProfileActivity" />
-        <activity android:name=".Activity.ProfileActivity" />
-        <activity android:name=".Activity.ForgotActivity" />
+        <activity android:name=".activity.ResultActivity"/>
+        <activity android:name=".activity.ScanActivity" />
+        <activity android:name=".activity.ChangePassActivity" />
+        <activity android:name=".activity.EditProfileActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.ForgotActivity" />
         <activity
-            android:name=".Activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Activity.RegisterActivity" />
-        <activity android:name=".Activity.LandingActivity" />
-        <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.AboutActivity" />
-        <activity android:name=".Activity.SplashActivity">
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LandingActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
