@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.RegisterFragment">
 
     <RelativeLayout
@@ -27,13 +27,15 @@
             android:layout_below="@id/img_logo"
             android:layout_marginStart="30dp"
             android:layout_marginTop="40dp"
-            android:layout_marginEnd="30dp">
+            android:layout_marginEnd="30dp"
+            android:hint="@string/nama"
+            app:errorEnabled="true"
+            app:errorTextColor="@android:color/white">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/nama"
                 android:inputType="textPersonName"
                 android:textColor="@color/colorWhite" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -44,14 +46,16 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/til_name"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/nomor_telepon"
+            app:errorEnabled="true"
+            app:errorTextColor="@android:color/white">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/nomor_telepon"
                 android:inputType="phone"
                 android:textColor="@color/colorWhite" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -62,70 +66,82 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/til_phone"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/alamat_email"
+            app:errorEnabled="true"
+            app:errorTextColor="@android:color/white">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/alamat_email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/colorWhite" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_password"
-            app:passwordToggleEnabled="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/til_email"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/password"
+            app:errorEnabled="true"
+            app:errorTextColor="@android:color/white"
+            app:passwordToggleEnabled="true">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:textColor="@color/colorWhite" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_confpass"
-            app:passwordToggleEnabled="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/til_password"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/ulangi_password"
+            app:errorEnabled="true"
+            app:errorTextColor="@android:color/white"
+            app:passwordToggleEnabled="true">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_confpass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/ulangi_password"
                 android:inputType="textPassword"
                 android:textColor="@color/colorWhite" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/btn_register"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/til_confpass"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/button_all"
+            android:backgroundTint="@android:color/white"
             android:text="@string/daftar"
-            android:textAllCaps="false"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="16sp" />
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
     </RelativeLayout>
 
 </ScrollView>

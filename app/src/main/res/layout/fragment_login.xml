@@ -27,7 +27,9 @@
             android:layout_below="@id/img_logo"
             android:layout_marginStart="30dp"
             android:layout_marginTop="40dp"
-            android:layout_marginEnd="30dp">
+            android:layout_marginEnd="30dp"
+            app:errorEnabled="true"
+            app:errorTextColor="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
@@ -46,6 +48,8 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
+            app:errorEnabled="true"
+            app:errorTextColor="@android:color/white"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -57,34 +61,50 @@
                 android:textColor="@color/colorWhite" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/tv_lupa"
-            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/til_password"
+            android:layout_alignParentEnd="true"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
             android:text="@string/lupa_password"
-            android:textAlignment="textEnd"
-            android:textColor="@color/colorWhite"
-            android:textSize="17sp"
-            android:textStyle="bold" />
+            android:textColor="@color/colorWhite" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_lupa"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="30dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="30dp"
-            android:background="@drawable/button_all"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@android:color/white"
             android:text="@string/masuk"
-            android:textAllCaps="false"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="16sp" />
+            android:textColor="@color/colorPrimaryDark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@android:color/white"
+            android:text="@string/daftar"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
     </RelativeLayout>
 
 </ScrollView>

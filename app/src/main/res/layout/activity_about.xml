@@ -10,7 +10,7 @@
         android:id="@+id/img_back"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:src="@drawable/ic_back"
         android:layout_marginTop="30dp"
         android:layout_marginStart="10dp"
         android:tint="@color/colorWhite"
