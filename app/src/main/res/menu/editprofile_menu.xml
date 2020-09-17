@@ -2,7 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/nav_changepass"
+        android:id="@+id/nav_edit_profile"
+        android:title="@string/nav_edit_profile"/>
+    <item
+        android:id="@+id/nav_change_email"
+        android:title="@string/nav_change_email"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/nav_change_pass"
         android:title="@string/ubah_password"
         app:showAsAction="never"/>
 </menu>

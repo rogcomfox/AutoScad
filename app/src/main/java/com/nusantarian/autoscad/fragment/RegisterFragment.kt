@@ -65,7 +65,7 @@ class RegisterFragment : Fragment(), View.OnClickListener {
     }
 
     private fun pushData(id : String, email : String, name : String, phone : String){
-        val user = User(email, name, phone)
+        val user = User(email, name, phone, DEFAULT_IMAGE_URL)
         users.document(id).set(user).addOnCompleteListener {
             if (it.isSuccessful){
                 ft.replace(R.id.frame_auth, LoginFragment())
@@ -120,5 +120,9 @@ class RegisterFragment : Fragment(), View.OnClickListener {
 
             true
         }
+    }
+
+    companion object{
+        const val DEFAULT_IMAGE_URL = ""
     }
 }

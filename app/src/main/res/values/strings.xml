@@ -4,20 +4,9 @@
     <string name="masuk">Masuk</string>
     <string name="daftar">Daftar</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
     <string name="pengaturan">Pengaturan</string>
     <string name="text_empty_field">Inputan Tidak Boleh Kosong</string>
     <string name="text_invalid_email">Alamat Email Tidak Valid</string>
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
     <string name="alamat_email">Alamat Email</string>
     <string name="password">Password</string>
     <string name="lupa_password">Lupa Password?</string>
@@ -26,7 +15,7 @@
     <string name="nama">Nama</string>
     <string name="ulangi_password">Ulangi Password</string>
     <string name="nomor_telepon">Nomor Telepon</string>
-    <string name="profil">Profil</string>
+    <string name="profil">Profil Saya</string>
     <string name="riwayat_deteksi">Riwayat Deteksi</string>
     <string name="keluar">Keluar</string>
     <string name="mulai_scan">Mulai Scan</string>
@@ -47,4 +36,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="btn_back">Back Button</string>
+    <string name="tv_info_forgot">Masukkan Alamat Email Anda Untuk Mereset Password</string>
+    <string name="message_logout">Apakah Anda Yakin Ingin Meengeluarkan Akun Anda?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="nav_change_email">Ubah Email</string>
+    <string name="nav_edit_profile">Ubah Info Profil</string>
 </resources>

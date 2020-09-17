@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.any" />
 
     <application
         android:allowBackup="true"
@@ -16,14 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".activity.ResultActivity"/>
-        <activity android:name=".activity.ScanActivity" />
-        <activity android:name=".activity.ChangePassActivity" />
-        <activity android:name=".activity.EditProfileActivity" />
-        <activity android:name=".activity.ProfileActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
